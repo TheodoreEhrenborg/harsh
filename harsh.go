@@ -394,7 +394,7 @@ func satisfied(d time.Time, habit *Habit, entries Entries) bool {
 	}
 
 	from := d
-	to := d.AddDate(0, 0, -int(habit.Frequency))
+	to := d.AddDate(0, 0, -int(habit.Frequency) + 1)
 	for dt := from; dt.Before(to) == false; dt = dt.AddDate(0, 0, -1) {
 		if entries[DailyHabit{Day: dt.Format(DateFormat), Habit: habit.Name}] == "y" {
 			return true
@@ -409,7 +409,7 @@ func skipified(d time.Time, habit *Habit, entries Entries) bool {
 	}
 
 	from := d
-	to := d.AddDate(0, 0, -int(habit.Frequency))
+	to := d.AddDate(0, 0, -int(habit.Frequency) + 1)
 	for dt := from; dt.Before(to) == false; dt = dt.AddDate(0, 0, -1) {
 		if entries[DailyHabit{Day: dt.Format(DateFormat), Habit: habit.Name}] == "s" {
 			return true
