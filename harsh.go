@@ -423,7 +423,9 @@ func warning(d time.Time, habit *Habit, entries Entries, firstRecord time.Time) 
 		return false
 	}
 
-	warningDays := int(math.Floor(float64(habit.Frequency/7))) + 1
+	warningDays := 1
+	// warningDays := int(math.Floor(float64(habit.Frequency/7))) + 1
+	// I want a warning only on the last day
 	to := d
 	from := d.AddDate(0, 0, -int(habit.Frequency)+warningDays)
 	for dt := from; dt.After(to) == false; dt = dt.AddDate(0, 0, 1) {
