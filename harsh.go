@@ -309,7 +309,7 @@ func getTodos(to time.Time, daysBack int, entries Entries) map[string][]Habit {
 func buildSpark(habits []Habit, entries Entries, from time.Time, to time.Time) []string {
 
 	sparkline := []string{}
-	sparks := []string{" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"}
+	sparks := []string{" ", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█", "T"}
 	i := 0
 
 	for d := from; d.After(to) == false; d = d.AddDate(0, 0, 1) {
