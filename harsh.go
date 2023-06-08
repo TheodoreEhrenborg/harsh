@@ -113,7 +113,7 @@ func main() {
 					entries := loadLog(config)
 
 					to := time.Now()
-					from := to.AddDate(0, 0, -80)
+					from := to.AddDate(0, 0, -60)
 					firstRecords := firstRecords(from, to, habits, *entries)
 					consistency := map[string][]string{}
 
