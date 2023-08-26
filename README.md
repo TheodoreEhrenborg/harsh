@@ -317,3 +317,7 @@ Primo, check out the [Contributing guidelines](CONTRIBUTING.md).
 * [James RC](https://github.com/yarbelk) - for initial code review and improvements pre-release
 * [blinry](https://github.com/blinry) - for writing habitctl which harsh is an homage to and riff on.
 
+# Updating dependencies
+nix shell github:tweag/gomod2nix
+
+Then run gomod2nix

@@ -1,0 +1,21 @@
+schema = 3
+
+[mod]
+  [mod."github.com/cpuguy83/go-md2man/v2"]
+    version = "v2.0.1"
+    hash = "sha256-R+8iYit0mZjCxiGlp2C3Y5tGhySSNFU1v6wqsWKGBPM="
+  [mod."github.com/gookit/color"]
+    version = "v1.5.0"
+    hash = "sha256-N6PeaT2h5/e3uu/mYdyPjDgi0f+JtDgnY1Y3y0pZrZk="
+  [mod."github.com/russross/blackfriday/v2"]
+    version = "v2.1.0"
+    hash = "sha256-R+84l1si8az5yDqd5CYcFrTyNZ1eSYlpXKq6nFt4OTQ="
+  [mod."github.com/urfave/cli/v2"]
+    version = "v2.3.0"
+    hash = "sha256-2QBgrNifcLYb0Ob8WjgBhy5P1rxj1BCYDS9el0ui7jA="
+  [mod."github.com/xo/terminfo"]
+    version = "v0.0.0-20210125001918-ca9a967f8778"
+    hash = "sha256-D40lVdmaLlNSKLmeHEXVBoIbdro8w7hnqBCUpzyZ4k4="
+  [mod."golang.org/x/sys"]
+    version = "v0.0.0-20220128215802-99c3d69c2c27"
+    hash = "sha256-m/7fL8jXyQDXh9HnRecHSK9DSuK9Z7G73F7D+Pt9lFI="
